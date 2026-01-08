@@ -20,7 +20,7 @@ class YOLODetector:
         
     def detect(self, 
                image: np.ndarray,
-               confidence_threshold: float = 0.5
+               confidence_threshold: float = 0.25
                ) -> List[Dict]:
         try:
             results = self.yolo_model(image, conf=confidence_threshold, verbose=False)

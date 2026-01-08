@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from src.exception import MerchandiserException
 from src.logs import logging
 
-load_dotenv()
+_ = load_dotenv()
 
 LLMProvider = Literal["openai", "anthropic"]
 
